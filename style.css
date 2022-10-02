@@ -1,4 +1,60 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  background-color: gray;
+  font-family: "Open Sans", sans-serif;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 941px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.header p {
+  text-align: center;
+  color: #ffffff;
+}
+
+.header__logo {
+  padding-top: 42px;
+}
+
+.header__text_big {
+  font-family: "Bebas Neue", cursive;
+  font-size: 60px;
+  line-height: 72px;
+}
+
+.header__text_center {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.header__text_bot {
+  padding-bottom: 71px;
+}
+
+/* FONST */
+
+/* font-family: 'Bebas Neue', cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+/* font-family: 'Open Sans', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
