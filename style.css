@@ -5,7 +5,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  color: #48555B;
+  color: #48555b;
 }
 
 img {
@@ -14,7 +14,7 @@ img {
 
 a {
   text-decoration: none;
-  color: #48555B;
+  color: #48555b;
 }
 
 .container {
@@ -31,7 +31,7 @@ a {
   align-items: center;
   box-sizing: border-box;
   background-color: gray;
-  background-image: url('./img/header.png');
+  background-image: url("./img/header.png");
   background-size: cover;
   background-position: center;
   font-weight: 700;
@@ -64,17 +64,16 @@ a {
 }
 
 /* NAVIGATION */
-
 .navigation {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.navigation > .container {
   display: flex;
   justify-content: space-between;
   padding: 24px 0 23px;
   font-weight: 700;
   font-size: 12px;
-}
-
-main > .container {
-  border-bottom: 1px solid #E6E6E6;
 }
 
 .navigation__logo > img {
@@ -84,7 +83,7 @@ main > .container {
 nav > ul {
   list-style-type: none;
   display: flex;
-  gap: 30px
+  gap: 30px;
 }
 
 nav > ul > li > a {
@@ -92,12 +91,64 @@ nav > ul > li > a {
 }
 
 nav > ul > li > a:hover {
-  color: #00A4E5;
+  color: #00a4e5;
   transition: 0.5s;
 }
 
-/* FONST */
+/* ABOUT */
+.about__header {
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 2px;
+  padding-top: 48px;
+  position: relative;
+  margin-bottom: 92px;
+}
 
+.about__header::after {
+  content: "";
+  width: 50px;
+  height: 0;
+  border: 1px solid #00A4E5;
+  position: absolute;
+  bottom: -11px;
+  left: calc(50% - 25px);
+}
+
+.about__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__text_header {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.about__text {
+  width: 405px;
+}
+
+.about__text_header > span {
+  color: #00A4E5;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 0.1875px;
+}
+
+.about__img {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px
+}
+
+/* FONST */
 @font-face {
   font-family: "Bebas Neue";
   src: url("./fonts/bebasneueregular.ttf") format("ttf"),
