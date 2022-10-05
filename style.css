@@ -96,7 +96,11 @@ nav > ul > li > a:hover {
 }
 
 /* ABOUT */
-.about__header {
+.about {
+  padding-bottom: 129px;
+}
+
+.main__header {
   font-weight: 700;
   font-size: 18px;
   text-align: center;
@@ -110,7 +114,7 @@ nav > ul > li > a:hover {
   content: "";
   width: 50px;
   height: 0;
-  border: 1px solid #00A4E5;
+  border: 1px solid #00a4e5;
   position: absolute;
   bottom: -11px;
   left: calc(50% - 25px);
@@ -132,7 +136,7 @@ nav > ul > li > a:hover {
 }
 
 .about__text_header > span {
-  color: #00A4E5;
+  color: #00a4e5;
 }
 
 .text {
@@ -145,7 +149,98 @@ nav > ul > li > a:hover {
 .about__img {
   display: flex;
   justify-content: space-between;
-  gap: 15px
+  gap: 15px;
+}
+
+/* SERVICES */
+.services {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 115px;
+}
+
+.services_top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 72px;
+}
+
+.services__header {
+  padding: 0;
+  margin: 0;
+  min-width: 201px;
+}
+
+.services__header::after {
+  content: "";
+  width: 50px;
+  height: 0;
+  border: 1px solid #00a4e5;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+.services_top > p {
+  font-size: 11px;
+  line-height: 19px;
+  padding: 0 32px 0 155px;
+}
+
+.services_top > button {
+  font-weight: 700;
+  font-size: 13px;
+  color: #ffffff;
+  padding: 11px 29px;
+  background-color: #00a4e5;
+  border: 0;
+  min-width: 153px;
+  max-height: 40px;
+  border: 1px solid #00a4e5;
+  cursor: pointer;
+  transition: 0.5s ease-out;
+}
+
+.services_top > button:hover {
+  color: #00a4e5;
+  border: 1px solid #00a4e5;
+  background-color: #ffffff;
+  transition: 0.5s ease-out;
+}
+
+.services_top > button:active {
+  transform: scale(0.9);
+  transition: 0.5s ease-out;
+}
+
+.services__cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.card {
+  padding: 38px 22px;
+  min-width: 250px;
+  box-sizing: content-box;
+  border: 1px solid #E6E6E6;
+}
+
+.card > img {
+  height: 66px;
+}
+
+.card > h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 25px 0 13px;
+}
+
+.card > p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 23px;
 }
 
 /* FONST */
