@@ -177,7 +177,7 @@ nav > ul > li > a:hover {
   height: 0;
   border: 1px solid #00a4e5;
   position: absolute;
-  bottom: -10px;
+  bottom: 0;
   left: 0;
 }
 
@@ -187,7 +187,7 @@ nav > ul > li > a:hover {
   padding: 0 32px 0 155px;
 }
 
-.services_top > button {
+.btn {
   font-weight: 700;
   font-size: 13px;
   color: #ffffff;
@@ -201,14 +201,14 @@ nav > ul > li > a:hover {
   transition: 0.5s ease-out;
 }
 
-.services_top > button:hover {
+.btn:hover {
   color: #00a4e5;
   border: 1px solid #00a4e5;
   background-color: #ffffff;
   transition: 0.5s ease-out;
 }
 
-.services_top > button:active {
+.btn:active {
   transform: scale(0.9);
   transition: 0.5s ease-out;
 }
@@ -223,7 +223,7 @@ nav > ul > li > a:hover {
   padding: 38px 22px;
   min-width: 250px;
   box-sizing: content-box;
-  border: 1px solid #E6E6E6;
+  border: 1px solid #e6e6e6;
 }
 
 .card > img {
@@ -241,6 +241,85 @@ nav > ul > li > a:hover {
   font-weight: 400;
   font-size: 13px;
   line-height: 23px;
+}
+
+/* GET-IN-TOUCH */
+.get-in-touch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  background-image: url("./img/bg.png");
+  background-position-y: 2px;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  box-sizing: border-box;
+}
+
+.get-in-touch > h2 {
+  width: 348px;
+  text-align: center;
+  padding: 120px 0 35px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+/* NEWSLETTER */
+.newsletter {
+  height: 100px;
+  background-color: #171819;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper > p {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  color: #ffffff;
+  padding-right: 70px;
+}
+
+.form > input {
+  box-sizing: border-box;
+  width: 250px;
+  height: 40px;
+  padding-left: 16px;
+}
+
+.form > input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.form > button {
+  transform: translate(-5px, -0.5px);
+}
+
+/* FOOTER */
+footer {
+  background-color: #171819;
+  height: 60px;
+  text-align: center;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+footer > p {
+  padding-top: 22px;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
+  color: #ffffff;
 }
 
 /* FONST */
